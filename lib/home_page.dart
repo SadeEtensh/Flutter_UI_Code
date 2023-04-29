@@ -74,7 +74,7 @@ class _HomePageState extends State<HomePage> {
                 ),
               ],
             ),
-            SizedBox(height: 20,),
+            const SizedBox(height: 20,),
             Container(
               width: MediaQuery.of(context).size.width,
               height: 220,
@@ -149,10 +149,22 @@ class _HomePageState extends State<HomePage> {
                           ],
                         ),
                         Expanded(child: Container()),
-                        const Icon(
-                          Icons.play_circle_fill,
-                          color: Colors.white,
-                          size: 60,
+                        Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(60),
+                            boxShadow: [
+                              BoxShadow(
+                                color: color.AppColor.gradientFirst,
+                                blurRadius: 10,
+                                offset: Offset(4, 8),
+                              )
+                            ]
+                          ),
+                          child: const Icon(
+                            Icons.play_circle_fill,
+                            color: Colors.white,
+                            size: 60,
+                          ),
                         )
                       ],
                     )
