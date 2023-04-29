@@ -113,6 +113,46 @@ class _HomePageState extends State<HomePage> {
                         fontSize: 16,
                         color: color.AppColor.homePageContainerTextSmall,
                       ),
+                    ),
+                    SizedBox(height: 5,),
+                    Text(
+                      "Legs Toning",
+                      style: TextStyle(
+                        fontSize: 25,
+                        color: color.AppColor.homePageContainerTextSmall,
+                      ),
+                    ),
+                    SizedBox(height: 5,),
+                    Text(
+                      "and Glutes Workout",
+                      style: TextStyle(
+                        fontSize: 25,
+                        color: color.AppColor.homePageContainerTextSmall,
+                      ),
+                    ),
+                    Row(
+                      children: [
+                        Row(
+                          children: [
+                            Icon(Icons.timer, size: 20, color: color.AppColor.homePageContainerTextSmall,),
+                            SizedBox(width: 10,),
+                            Text(
+                              "60 min",
+                              style: TextStyle(
+                                fontSize: 14,
+                                color: color.AppColor.homePageContainerTextSmall,
+                              ),
+                            ),
+
+                          ],
+                        ),
+                        Expanded(child: Container()),
+                        const Icon(
+                          Icons.play_circle_fill,
+                          color: Colors.white,
+                          size: 60,
+                        )
+                      ],
                     )
                   ],
                 ),
