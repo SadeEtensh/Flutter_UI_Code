@@ -152,6 +152,7 @@ class _HomePageState extends State<HomePage> {
                         Container(
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(60),
+
                             boxShadow: [
                               BoxShadow(
                                 color: color.AppColor.gradientFirst,
@@ -171,7 +172,8 @@ class _HomePageState extends State<HomePage> {
                   ],
                 ),
               ),
-            )
+            ),
+
           ],
         ),
       )
